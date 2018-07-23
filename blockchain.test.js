@@ -50,6 +50,6 @@ describe('Blockchain', () => {
         bc.addBlock('foo');
         bc.replaceChain(bc2.chain);
 
-        expect(bc.chain).not.toEqual(bc2.chain);
+        expect(bc.chain).not.toEqual(bc2.chain); 
     });
 });
