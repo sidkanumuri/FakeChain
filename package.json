@@ -21,6 +21,7 @@
     "elliptic": "^6.4.0",
     "elliptical": "^2.3.0",
     "express": "^4.16.3",
+    "uuid": "^3.3.2",
     "ws": "^6.0.0"
   },
   "description": ""

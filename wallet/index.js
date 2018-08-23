@@ -1,16 +1,16 @@
-const ChainUtil = require('../chail-util');
+const ChainUtil = require('../chain-util');
 const { INITIAL_BALANCE }   =   require('../config');
 
 class Wallet {
     constructor() {
         this.balance = INITIAL_BALANCE;
         this.keyPair = ChainUtil.genKeyPair();
-        this.publickey = this.keyPair.getPublic().encode('hex');
+        this.publicKey = this.keyPair.getPublic().encode('hex');
     }
 
-    toSTRING(){
+    toString(){
         return `Wallet - 
-        publicKey: ${this.publickey.toSTRING()}
+        publicKey: ${this.publicKey.toString()}
         balance  :  ${this.balance}`
     }
 }
