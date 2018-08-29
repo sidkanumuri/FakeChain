@@ -21,7 +21,9 @@ class Miner{
         this.p2pServer.syncChains();
         // clear the transaction pool
         this.transactionPool.clear();
+        this.p2pServer.broadcastClearTransactions();
         //broadcast ti eveery miner to clear their transaction pools
+        return block;
     }
 }
 
